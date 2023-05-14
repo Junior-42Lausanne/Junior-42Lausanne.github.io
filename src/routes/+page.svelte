@@ -13,9 +13,18 @@
 <main id="h">
 	<h1 class="h1">
 		<span
-			class="text-9xl bg-gradient-to-br from-blue-500 to-cyan-300 bg-clip-text text-transparent box-decoration-clone"
+			class="gradient-heading text-6xl
+			"
 		>
 			We build amazing apps
+		</span>
+	</h1>
+	<h1 class="h1">
+		<span
+			class="gradient-heading text-9xl
+			"
+		>
+			JE 42 Lausanne
 		</span>
 	</h1>
 	<section class="flex">
@@ -28,3 +37,13 @@
 		</section>
 	</section>
 </main>
+
+<style lang="postcss">
+	.gradient-heading {
+		@apply bg-clip-text text-transparent box-decoration-clone;
+		/* Direction */
+		@apply bg-gradient-to-br;
+		/* Color Stops */
+		@apply from-primary-500 to-secondary-500;
+	}
+</style>
