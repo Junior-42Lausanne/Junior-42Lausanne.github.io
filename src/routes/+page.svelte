@@ -4,11 +4,7 @@
 	let value = 0;
 </script>
 
-<AppBar>
-	<svelte:fragment slot="lead">(icon)</svelte:fragment>
-	(title)
-	<svelte:fragment slot="trail">(actions)</svelte:fragment>
-</AppBar>
+
 
 <main id="h">
 	<h1 class="h1">
