@@ -29,7 +29,7 @@
 			<a href="/"> JE 42 Lausanne</a>
 			<svelte:fragment slot="trail">
 				<a type="button" class="btn variant-ghost" href="./accordion">Accordion</a>
-				<a type="button" class="btn variant-ghost" href="{ROOT_URL}/subjects">Subjects</a>
+				<!-- <a type="button" class="btn variant-ghost" href="{ROOT_URL}/subjects">Subjects</a> -->
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
