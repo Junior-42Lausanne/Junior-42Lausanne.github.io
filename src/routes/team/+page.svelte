@@ -1,5 +1,5 @@
 <script>
-	import TeamMember from '$lib/components/TeamMember.svelte';
+	import TeamMember from './TeamMember.svelte';
 </script>
 
 <div class="flex flex-col items-center justify-center">

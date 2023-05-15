@@ -1,5 +1,5 @@
 <script>
-	import Partner from '$lib/components/Partner.svelte';
+	import Partner from './Partner.svelte';
 </script>
 
 <div class="flex flex-col items-center justify-center">
