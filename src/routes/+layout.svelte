@@ -15,6 +15,7 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
 	import { AppBar, AppShell, Avatar, Tab, TabGroup, TableOfContents } from '@skeletonlabs/skeleton';
+	import { ROOT_URL } from '$lib/env';
 </script>
 
 <!-- svelte-ignore a11y-missing-content -->
@@ -27,8 +28,8 @@
 			>
 			<a href="/"> JE 42 Lausanne</a>
 			<svelte:fragment slot="trail">
-				<a type="button" class="btn variant-ghost" href="/accordion">Accordion</a>
-				<a type="button" class="btn variant-ghost" href="/subjects">Subjects</a>
+				<a type="button" class="btn variant-ghost" href="./accordion">Accordion</a>
+				<a type="button" class="btn variant-ghost" href="{ROOT_URL}/subjects">Subjects</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
