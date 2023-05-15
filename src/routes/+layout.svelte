@@ -12,17 +12,32 @@
 	*/
 	import '@skeletonlabs/skeleton/themes/theme-crimson.css';
 
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
-	import { AppBar } from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, Avatar, Tab, TabGroup, TableOfContents } from '@skeletonlabs/skeleton';
 </script>
 
-<AppBar>
-	<svelte:fragment slot="lead">(icon)</svelte:fragment>
-	(title)
-	<svelte:fragment slot="trail">(actions)</svelte:fragment>
-</AppBar>
+<!-- svelte-ignore a11y-missing-content -->
+<AppShell>
+	<svelte:fragment slot="header">
+		<AppBar>
+			<svelte:fragment slot="lead"
+				><a href="/"><Avatar width="w-12" rounded="rounded-full" initials="42" /></a
+				></svelte:fragment
+			>
+			<a href="/"> JE 42 Lausanne</a>
+			<svelte:fragment slot="trail">
+				<a type="button" class="btn variant-ghost" href="/accordion">Accordion</a>
+				<a type="button" class="btn variant-ghost" href="/subjects">Subjects</a>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
 
-<slot />
+	<svelte:fragment slot="sidebarRight">
+		<TableOfContents target="#h" />
+	</svelte:fragment>
+
+	<slot />
+
+	<!-- <svelte:fragment slot="pageFooter">Page Footer</svelte:fragment> -->
+</AppShell>
