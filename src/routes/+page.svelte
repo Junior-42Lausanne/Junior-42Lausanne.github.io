@@ -38,26 +38,37 @@
 			</p>
 		</div>
 	</div>
-	<Accordion autocollapse>
-		<AccordionItem open>
-			<svelte:fragment slot="lead">(icon)</svelte:fragment>
-			<svelte:fragment slot="summary">(summary)</svelte:fragment>
-			<svelte:fragment slot="content">content</svelte:fragment>
-		</AccordionItem>
-		<AccordionItem>
-			<svelte:fragment slot="lead">(icon)</svelte:fragment>
-			<svelte:fragment slot="summary">(summary)</svelte:fragment>
-			<svelte:fragment slot="content">content</svelte:fragment>
-		</AccordionItem>
-		<AccordionItem>
-			<svelte:fragment slot="lead">(icon)</svelte:fragment>
-			<svelte:fragment slot="summary">(summary)</svelte:fragment>
-			<svelte:fragment slot="content">content</svelte:fragment>
-		</AccordionItem>
-	</Accordion>
+	<div class="mt-32 px-32">
+		<Accordion autocollapse>
+			<AccordionItem open>
+				<svelte:fragment slot="lead">(icon)</svelte:fragment>
+				<svelte:fragment slot="summary">(summary)</svelte:fragment>
+				<svelte:fragment slot="content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus aperiam fugiat
+					officiis dolorum a in similique, perspiciatis provident vitae enim necessitatibus voluptas
+					blanditiis, quasi excepturi repellendus ea nihil? Vel. Lorem ipsum, dolor sit amet
+					consectetur adipisicing elit. Rem, hic dicta reprehenderit mollitia veritatis at
+					perspiciatis culpa, nostrum illum, magnam aperiam quae doloremque a optio expedita
+					aspernatur! Reprehenderit, molestiae ut.
+				</svelte:fragment>
+			</AccordionItem>
+			<AccordionItem>
+				<svelte:fragment slot="lead">(icon)</svelte:fragment>
+				<svelte:fragment slot="summary">(summary)</svelte:fragment>
+				<svelte:fragment slot="content"
+					>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis minima exercitationem
+					iusto porro illum quis nostrum harum distinctio dolor quasi! Hic praesentium repudiandae,
+					explicabo ipsam eum in dignissimos nobis doloribus. Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Quibusdam magnam molestias eveniet dolore natus sapiente?
+					Commodi est necessitatibus dolorum, impedit obcaecati libero placeat rerum, id tempore
+					voluptas repellendus et earum?</svelte:fragment
+				>
+			</AccordionItem>
+		</Accordion>
+	</div>
 	<div class="flex flex-row gap-12">
-		<button class="btn variant-filled">Nous rejoindre</button>
-		<button class="btn variant-filled">Nous Contacter</button>
+		<a href="/team" class="btn variant-filled">Nous rejoindre</a>
+		<a href="/contact" class="btn variant-filled">Nous Contacter</a>
 	</div>
 </div>
 
