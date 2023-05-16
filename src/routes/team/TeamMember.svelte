@@ -7,12 +7,18 @@
 	export let picture: string;
 	export let linkedin_link: string;
 	export let description: string;
+
+	export let role: null | string = null;
+
 </script>
 
 <a href={linkedin_link} class="card flex flex-row p-8">
 	<Avatar width="w-12" rounded="rounded-full" initials={name} src={picture} />
 	<div class="items-left flex flex-col pl-4">
 		<h3 class="h3 pb-2">{name}</h3>
+		{#if role}
+			<p class="text-sm text-gray-600">{role}</p>
+		{/if}
 		<p class="text-sm text-gray-600">{description}</p>
 	</div>
 </a>
