@@ -76,12 +76,4 @@
 	p {
 		@apply pb-4 text-justify;
 	}
-
-	.gradient-heading {
-		@apply box-decoration-clone bg-clip-text text-transparent;
-		/* Direction */
-		@apply bg-gradient-to-br;
-		/* Color Stops */
-		@apply from-primary-500 to-secondary-500;
-	}
 </style>
