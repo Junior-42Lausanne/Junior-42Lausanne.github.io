@@ -9,12 +9,12 @@
 	export let comment: string | null = null;
 </script>
 
-<div class="card flex flex-row p-8">
+<a href={link} class="card flex flex-row p-8 card-hover">
 	<Avatar width="w-12" rounded="rounded-full" initials={name} src={logo} />
-	<a href={link} class="items-left flex flex-col pl-4">
+	<div  class="items-left flex flex-col pl-4">
 		<h3 class="h3 pb-2">{name}</h3>
 		{#if comment}
 			<p class="text-sm text-gray-600">{comment}</p>
 		{/if}
-	</a>
-</div>
+	</div>
+</a>

@@ -2,21 +2,18 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 </script>
 
-<!-- Welcome page -->
-
 <div class="flex flex-col items-center pt-32">
 	<h1 class="h1">
 		<span class="gradient-heading text-6xl"> (Slogan) </span>
 	</h1>
 	<h1 class="h1">
-		<!-- <span class="gradient-heading text-9xl"> Junior Entreprise 42 Lausanne </span> -->
 		<span class="gradient-heading text-9xl"> JE 42 Lausanne </span>
 	</h1>
 </div>
 
 <div class="flex flex-col items-center px-96 pt-32">
 	<div class="flex flex-row gap-16">
-		<div class="card items-center p-6 align-middle">
+		<div class="card card-hover items-center p-6 align-middle">
 			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
@@ -29,7 +26,7 @@
 				veritatis tenetur tempore beatae quas.
 			</p>
 		</div>
-		<div class="card items-center p-8 align-middle">
+		<div class="card card-hover items-center p-8 align-middle">
 			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque

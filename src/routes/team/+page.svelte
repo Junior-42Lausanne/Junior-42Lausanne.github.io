@@ -10,7 +10,7 @@
 	}[] = [
 		{
 			name: 'Quentin Jungo',
-			picture: 'todo',
+			picture: 'profile-pictures/quentin-jungo.png',
 			role: 'vice-president',
 			linkedin_link: 'https://www.linkedin.com/in/quentin-jungo-389b65227/',
 			description: 'John is a great guy, passionate about his work.'

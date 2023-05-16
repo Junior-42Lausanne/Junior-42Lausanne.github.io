@@ -24,7 +24,7 @@
 				><a href="/"><Avatar width="w-12" rounded="rounded-full" initials="42" /></a
 				></svelte:fragment
 			>
-			<a href="/"> JE 42 Lausanne </a>
+			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
 			<svelte:fragment slot="trail">
 				<a type="button" class="btn variant-ghost" href="/delivery">Prestation</a>
 				<a type="button" class="btn variant-ghost" href="/team">Equipe</a>
