@@ -1,20 +1,17 @@
 <script lang="ts">
-	// The ordering of these imports is critical to your app working properly
-	/*
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-	import '@skeletonlabs/skeleton/themes/theme-modern.css';
-	import '@skeletonlabs/skeleton/themes/theme-rocket.css';
-	import '@skeletonlabs/skeleton/themes/theme-seafoam.css';
-	import '@skeletonlabs/skeleton/themes/theme-vintage.css';
-	import '@skeletonlabs/skeleton/themes/theme-sahara.css';
-	import '@skeletonlabs/skeleton/themes/theme-hamlindigo.css';
-	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
-	*/
 	import '@skeletonlabs/skeleton/themes/theme-crimson.css';
+	// import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	// import '@skeletonlabs/skeleton/themes/theme-modern.css';
+	// import '@skeletonlabs/skeleton/themes/theme-rocket.css';
+
+	// import '@skeletonlabs/skeleton/themes/theme-seafoam.css';
+	// import '@skeletonlabs/skeleton/themes/theme-sahara.css';
+	// import '@skeletonlabs/skeleton/themes/theme-hamlindigo.css';
+	// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
-	import { AppBar, AppShell, Avatar, Tab, TabGroup, TableOfContents } from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, Avatar, TableOfContents } from '@skeletonlabs/skeleton';
 </script>
 
 <AppShell>
@@ -26,7 +23,7 @@
 			>
 			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
 			<svelte:fragment slot="trail">
-				<a type="button" class="btn variant-ghost" href="/delivery">Prestation</a>
+				<a type="button" class="btn variant-ghost" href="/service">Prestation</a>
 				<a type="button" class="btn variant-ghost" href="/team">Equipe</a>
 				<a type="button" class="btn variant-ghost" href="/contact">Contact</a>
 				<a type="button" class="btn variant-ghost" href="/partners">Partenaires</a>
@@ -34,11 +31,5 @@
 		</AppBar>
 	</svelte:fragment>
 
-	<svelte:fragment slot="sidebarRight">
-		<TableOfContents target="#h" />
-	</svelte:fragment>
-
 	<slot />
-
-	<!-- <svelte:fragment slot="pageFooter">Page Footer</svelte:fragment> -->
 </AppShell>
