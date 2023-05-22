@@ -31,7 +31,7 @@
 		</AppBar>
 	</svelte:fragment>
 <!-- 	<svelte:fragment slot="sidebar"> -->
-	<svelte:fragment slot="footer">
+	<svelte:fragment slot="pageFooter">
 		<div class="flex flex-row items-center align-middle content-center">
 			<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
 			<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
