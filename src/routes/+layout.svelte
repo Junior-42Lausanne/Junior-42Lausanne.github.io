@@ -32,9 +32,12 @@
 	</svelte:fragment>
 <!-- 	<svelte:fragment slot="sidebar"> -->
 	<svelte:fragment slot="pageFooter">
-		<div class="flex flex-row items-center align-middle content-center">
-			<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
+		<div class="flex flex-col items-center">
+			<div class="flex flex-row">
+				<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
 			<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
+			</div>
+			
 		</div>
 		
 	</svelte:fragment>
