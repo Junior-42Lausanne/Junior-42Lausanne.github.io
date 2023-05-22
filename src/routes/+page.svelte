@@ -13,7 +13,7 @@
 
 <div class="flex flex-col items-center px-96 pt-32">
 	<div class="flex flex-col gap-16">
-		<a  href="" class="card card-hover items-center p-6 align-middle">
+		<a  href="https://junior-enterprises.ch/" class="card card-hover items-center p-6 align-middle">
 			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
@@ -26,7 +26,7 @@
 				veritatis tenetur tempore beatae quas.
 			</p>
 		</a>
-		<a class="card card-hover items-center p-8 align-middle">
+		<a href="https://42lausanne.ch/" class="card card-hover items-center p-8 align-middle">
 			<h3 class="h3 pb-2">What is 42?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
@@ -34,7 +34,7 @@
 				quos totam consectetur. Nulla alias aut dolorum.
 			</p>
 		</a>		
-		<a class="card card-hover items-center p-8 align-middle">
+		<a href="/team" class="card card-hover items-center p-8 align-middle">
 			<h3 class="h3 pb-2">Qui somme nous?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
