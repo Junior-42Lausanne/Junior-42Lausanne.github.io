@@ -1,17 +1,20 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+
+	//import Title from './Title.svelte';
 </script>
 
 <div class="flex flex-col items-center pt-32">
 	<h1 class="h1">
-		<span class="gradient-heading text-6xl"> (Slogan) </span>
+		<span class="gradient-heading text-2xl md:text-3xl lg:text-6xl"> Slogan lorem ipsum dolor </span>
 	</h1>
 	<h1 class="h1">
-		<span class="gradient-heading text-9xl"> JE 42 Lausanne </span>
+		<span class="gradient-heading text-5xl md:text-7xl lg:text-9xl"> JE 42 Lausanne </span>
 	</h1>
+	 <!--<Title text="JE 42 Lausanne" />-->
 </div>
 
-<div class="flex flex-col items-center px-96 pt-32">
+<div class="flex flex-col items-center px-7 md:px-40 lg:px-60 xl:px-96 pt-32">
 	<div class="flex flex-col gap-16">
 		<a  href="https://junior-enterprises.ch/" class="card card-hover items-center p-6 align-middle">
 			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
@@ -44,6 +47,7 @@
 		</a>
 	</div>
 </div>
+
 
 <style lang="postcss">
 	p {
