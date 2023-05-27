@@ -62,10 +62,10 @@
 	
 <!-- 	<svelte:fragment slot="sidebar"> -->
 	<svelte:fragment slot="pageFooter">
-		<div class="flex flex-col items-center">
+		<div class="flex flex-col items-center ">
 			<div class="flex flex-row">
-				<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
-			<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
+				<button class="btn variant-filled m-1 sm:m-5"> <a href="/legal">Mentions légales</a> </button>
+			<button class="btn variant-filled m-1 sm:m-5"> <a href="/legal">Copyright</a> </button>
 			</div>
 			
 		</div>

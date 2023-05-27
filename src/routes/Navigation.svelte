@@ -9,7 +9,7 @@
         },
         {
           href: '/service',
-          label: 'Presentations'
+          label: 'Prestations'
         },
         {
           href: '/team',
@@ -46,9 +46,15 @@
 	</ul>-->
 	<ul>
 		{#each navItems as {href, label}}
-    	<a class:active={href_matches_page(href)} {href} on:click={drawerClose}>{label}</a>
+    	<li><a class:active={href_matches_page(href)} {href} on:click={drawerClose}>{label}</a></li>
     	{/each}
 	</ul>
 	
 	
 </nav>
+
+<style lang="postcss">
+	.active {
+		@apply variant-filled-primary;
+	}
+</style>

@@ -3,12 +3,12 @@
 </script>
 
 <div class="flex flex-col items-center justify-center">
-	<h1 class="gradient-heading h1 p-16 text-8xl">Prestations</h1>
-	<p>Nous avons plusieurs services a vous proposer</p>
+	<h1 class="gradient-heading h1 p-16 text-7xl md:text-8xl">Prestations</h1>
+	<p class="text-1xl sm:text-3xl md:text-4xl lg:text-5xl">Nous avons plusieurs services a vous proposer</p>
 
 	<hr class="my-8 w-1/2" />
 
-	<div class="flex flex-row">
+	<div class="flex flex-col xl:flex-row">
 		<Service
 			name={'Creation Web'}
 			description={'Que ce soit un simple site wordpress ou un vrai truc sur mesure, blablabla'}
