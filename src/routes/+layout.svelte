@@ -14,14 +14,7 @@
 
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
-	import {
-		AppBar,
-		AppShell,
-		Avatar,
-		TableOfContents,
-		Drawer,
-		drawerStore
-	} from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell, Avatar, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 
 	import Navigation from './Navigation.svelte';
 

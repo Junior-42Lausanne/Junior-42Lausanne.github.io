@@ -37,13 +37,6 @@
 </script>
 
 <nav class="list-nav">
-	<!--<ul>
-		<li><a href="/" on:click={drawerClose}>Home</a></li>
-		<li><a href="/service" on:click={drawerClose}>Prestations</a></li>
-		<li><a href="/team" on:click={drawerClose}>Equipe</a></li>
-		<li><a href="/contact" on:click={drawerClose}>Contact</a></li>
-		<li><a href="/partners" on:click={drawerClose}>Partenaires</a></li>
-	</ul>-->
 	<ul>
 		{#each navItems as { href, label }}
 			<li><a class:active={href_matches_page(href)} {href} on:click={drawerClose}>{label}</a></li>
@@ -53,6 +46,6 @@
 
 <style lang="postcss">
 	.active {
-		@apply variant-filled-primary;
+		@apply bg-primary-500;
 	}
 </style>

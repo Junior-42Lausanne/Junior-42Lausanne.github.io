@@ -6,7 +6,6 @@
 	export let name: string;
 	export let picture: string;
 	export let description: string;
-
 </script>
 
 <div class="card m-1 flex flex-row p-8 md:m-4">
