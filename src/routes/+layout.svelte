@@ -35,7 +35,7 @@
 		<div class="flex flex-col items-center">
 			<div class="flex flex-row">
 				<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
-				<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
+				<button class="btn variant-ghost"> <a href="/copyright">Copyright</a> </button>
 			</div>
 		</div>
 	</svelte:fragment>
