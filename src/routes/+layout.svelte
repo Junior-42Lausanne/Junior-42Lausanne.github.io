@@ -5,7 +5,7 @@
 	import '../app.postcss';
 	/// ==================================================
 
-	import { AppBar, AppShell, drawerStore } from '@skeletonlabs/skeleton';
+	import { AppShell } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
 	import MyAppBar from './MyAppBar.svelte';
 

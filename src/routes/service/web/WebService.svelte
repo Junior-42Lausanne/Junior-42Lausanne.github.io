@@ -1,8 +1,6 @@
 <!-- a little card to display a team member -->
 
 <script lang="ts">
-	import { Avatar } from '@skeletonlabs/skeleton';
-
 	export let name: string;
 	export let picture: string;
 	export let description: string;
