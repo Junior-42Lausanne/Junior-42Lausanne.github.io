@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import WebService from './WebService.svelte';
 
 	const services = [
 		{
@@ -20,23 +21,26 @@
 	];
 </script>
 
-<div class="flex flex-col items-center justify-center">
-	<Accordion
-		spacing="space-y-16
-		"
-	>
-		{#each services as service}
-			<AccordionItem>
-				<svelte:fragment slot="lead">
-					<img src={service.picture} alt={service.name} class="h-16 w-16" />
-				</svelte:fragment>
-				<svelte:fragment slot="summary">
-					{service.name}
-				</svelte:fragment>
-				<svelte:fragment slot="content">
-					{service.description}
-				</svelte:fragment>
-			</AccordionItem>
-		{/each}
-	</Accordion>
-</div>
+{#each services as service}
+	<WebService
+		name={service.name}
+		description={service.description}
+		picture={service.picture}
+	/>
+{/each}
+
+<!-- <Accordion	spacing="space-y-16">
+	{#each services as service}
+		<AccordionItem>
+			<svelte:fragment slot="lead">
+				<img src={service.picture} alt={service.name} class="h-16 w-16" />
+			</svelte:fragment>
+			<svelte:fragment slot="summary">
+				{service.name}
+			</svelte:fragment>
+			<svelte:fragment slot="content">
+				{service.description}
+			</svelte:fragment>
+		</AccordionItem>
+	{/each}
+</Accordion> -->

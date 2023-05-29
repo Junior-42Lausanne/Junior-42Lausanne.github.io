@@ -6,12 +6,12 @@
 	export let name: string;
 	export let picture: string;
 	export let description: string;
-	export let href: string;
+
 </script>
 
-<a {href} class="card card-hover m-1 flex flex-row p-8 md:m-4">
+<div class="card m-1 flex flex-row p-8 md:m-4">
 	<Avatar
-		width="w-32"
+		width="w-16"
 		max-width="w-32"
 		min-width="w-5"
 		rounded="rounded-full"
@@ -22,4 +22,4 @@
 		<h3 class="h3 pb-2">{name}</h3>
 		<p class="text-sm text-gray-600">{description}</p>
 	</div>
-</a>
+</div>

@@ -14,28 +14,66 @@
 
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
-	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
+	import {
+		AppBar,
+		AppShell,
+		Avatar,
+		TableOfContents,
+		Drawer,
+		drawerStore
+	} from '@skeletonlabs/skeleton';
+
+	import Navigation from './Navigation.svelte';
+
+	function drawerOpen() {
+		drawerStore.open({});
+	}
 </script>
+
+<Drawer>
+	<h2 class="p-4">Navigation</h2>
+	<hr />
+	<Navigation />
+</Drawer>
 
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
+				<div class="flex items-center">
+					<button class="btn btn-sm mr-4 md:hidden" on:click={drawerOpen}>
+						<span>
+							<svg viewBox="0 0 100 80" class="h-4 w-4 fill-token">
+								<rect width="100" height="20" />
+								<rect y="30" width="100" height="20" />
+								<rect y="60" width="100" height="20" />
+							</svg>
+						</span>
+					</button>
+					<!--<strong class="text-xl uppercase">Skeleton</strong>-->
+				</div>
+
+				<a href="/"><Avatar width="w-12" rounded="rounded-full" initials="42" /></a>
 			</svelte:fragment>
+
+			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
+
 			<svelte:fragment slot="trail">
-				<a type="button" class="btn variant-ghost" href="/service">Prestation</a>
-				<a type="button" class="btn variant-ghost" href="/team">Equipe</a>
-				<a type="button" class="btn variant-ghost" href="/contact">Contact</a>
-				<a type="button" class="btn variant-ghost" href="/partners">Partenaires</a>
+				<a type="button" class="btn variant-ghost hidden md:block" href="/service">Prestations</a>
+				<a type="button" class="btn variant-ghost hidden md:block" href="/team">Equipe</a>
+				<a type="button" class="btn variant-ghost hidden md:block" href="/contact">Contact</a>
+				<a type="button" class="btn variant-ghost hidden md:block" href="/partners">Partenaires</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+
 	<svelte:fragment slot="pageFooter">
 		<div class="flex flex-col items-center">
 			<div class="flex flex-row">
-				<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
-				<button class="btn variant-ghost"> <a href="/copyright">Copyright</a> </button>
+				<button class="btn variant-filled m-1 sm:m-5">
+					<a href="/legal">Mentions légales</a>
+				</button>
+				<button class="btn variant-filled m-1 sm:m-5"> <a href="/legal">Copyright</a> </button>
 			</div>
 		</div>
 	</svelte:fragment>
