@@ -1,31 +1,44 @@
-<script>
-	import Service from '../Service.svelte';
+<script lang="ts">
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+
+	export let data: any = { name: 'Web' };
+
+	const services = [
+		{
+			name: 'Wordpress',
+			description: '...',
+			picture: '/service-pictures/wordpress.png'
+		},
+		{
+			name: 'Intégration',
+			description: '...',
+			picture: '/service-pictures/web.png'
+		},
+		{
+			name: 'Sur mesure',
+			description: '...',
+			picture: '/service-pictures/web.png'
+		}
+	];
 </script>
 
 <div class="flex flex-col items-center justify-center">
-	<h1 class="gradient-heading h1 p-16 text-8xl">Web</h1>
-	<hr class="my-8 w-1/2" />
-
-	<div class="flex flex-row">
-		<Service
-			name={'Wordpress'}
-			description={'...'}
-			picture={'/service-pictures/wordpress.png'}
-			href={'web/wordpress'}
-		/>
-
-		<Service
-			name={'Intégration'}
-			description={'...'}
-			picture={'/service-pictures/web.png'}
-			href={'web/wordpress'}
-		/>
-
-		<Service
-			name={'Sur mesure'}
-			description={'...'}
-			picture={'/service-pictures/web.png'}
-			href={'web/wordpress'}
-		/>
-	</div>
+	<Accordion
+		spacing="space-y-16
+		"
+	>
+		{#each services as service}
+			<AccordionItem open>
+				<svelte:fragment slot="lead">
+					<img src={service.picture} alt={service.name} class="h-16 w-16" />
+				</svelte:fragment>
+				<svelte:fragment slot="summary">
+					{service.name}
+				</svelte:fragment>
+				<svelte:fragment slot="content">
+					{service.description}
+				</svelte:fragment>
+			</AccordionItem>
+		{/each}
+	</Accordion>
 </div>

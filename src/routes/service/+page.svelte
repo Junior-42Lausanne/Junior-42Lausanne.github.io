@@ -2,11 +2,7 @@
 	import Service from './Service.svelte';
 </script>
 
-<div class="flex flex-col items-center justify-center">
-	<h1 class="gradient-heading h1 p-16 text-8xl">Prestations</h1>
-	<p>Nous avons plusieurs services a vous proposer</p>
 
-	<hr class="my-8 w-1/2" />
 
 	<div class="flex flex-row">
 		<Service
@@ -30,4 +26,3 @@
 			href={'service/support'}
 		/>
 	</div>
-</div>
