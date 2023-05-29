@@ -6,18 +6,23 @@
 	export let name: string;
 	export let picture: string;
 	export let linkedin_link: string;
-	export let description: string;
+	export let role: string;
+	export let mail: string;
 
-	export let role: null | string = null;
+	const linkedin_logo =
+		'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png';
 </script>
 
-<a href={linkedin_link} class="card card-hover flex flex-row p-8">
+<div class="card flex flex-row flex-nowrap p-4">
 	<Avatar width="w-32" rounded="rounded-full" initials={name} src={picture} />
-	<div class="items-left flex flex-col pl-4">
-		<h3 class="h3 pb-2">{name}</h3>
-		{#if role}
-			<h4 class="h4">{role}</h4>
-		{/if}
-		<p class="text-sm text-gray-600">{description}</p>
+	<div class="mx-4 flex flex-1 flex-col">
+		<h2 class="h2 pb-2">{name}</h2>
+		<p>{role}</p>
 	</div>
-</a>
+	<div class="flex flex-col justify-end gap-2">
+		<a href={linkedin_link}>
+			<Avatar width="w-8" rounded="rounded-xl" initials="in" src={linkedin_logo} />
+		</a>
+		<!-- <a href={'mailto:' + mail}><Avatar width="w-8" rounded="rounded-xl" initials="@" /> </a> -->
+	</div>
+</div>

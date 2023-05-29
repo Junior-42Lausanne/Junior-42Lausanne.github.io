@@ -1,68 +1,69 @@
 <script lang="ts">
 	import TeamMember from './TeamMember.svelte';
-
-	const members: {
+	type Member = {
 		name: string;
 		picture: string;
-		role: string | null;
+		role: string;
 		linkedin_link: string;
-		description: string;
-	}[] = [
+		mail: string;
+	};
+
+	const members: Member[] = [
 		{
 			name: 'Quentin Jungo',
 			picture: 'profile-pictures/quentin-jungo.png',
 			role: 'vice-president',
 			linkedin_link: 'https://www.linkedin.com/in/quentin-jungo-389b65227/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: 'quentin.jungo@gmail.com'
 		},
 		{
 			name: 'Lowell Zima',
 			picture: 'profile-pictures/quentin-jungo.png',
-			role: null,
+			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/lowell-zima/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			name: 'Jérémy Olivier',
 			picture: 'profile-pictures/quentin-jungo.png',
 			role: 'treasurer',
 			linkedin_link: 'https://www.linkedin.com/in/jol/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			picture: 'profile-pictures/quentin-jungo.png',
 			name: 'Joshua Morcom-Harneis',
 			role: 'president',
 			linkedin_link: 'https://www.linkedin.com/in/joshua-morcom-harneis-1907921bb/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			name: 'Jacek Wikeria',
 			picture: 'profile-pictures/quentin-jungo.png',
-			role: null,
+			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jacek-f-wikiera-809983246/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			name: 'Jonathan terrettaz',
 			picture: 'profile-pictures/quentin-jungo.png',
-			role: null,
+			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jonathan-terrettaz-44256976/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			name: 'Alexis Gonnel',
 			picture: 'profile-pictures/quentin-jungo.png',
-			role: null,
+			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/alexis-gonelle-a22aa2260/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		},
 		{
 			name: 'Max Stock',
 			picture: 'profile-pictures/quentin-jungo.png',
-			role: null,
+			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/maximestocklin/',
-			description: 'John is a great guy, passionate about his work.'
+			mail: ''
 		}
 	];
 </script>
