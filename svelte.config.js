@@ -21,7 +21,7 @@ const config = {
 			fallback: null,
 			precompress: false,
 			strict: true,
-			base: dev ? '' : process.env.BASE_PATH,
+			base: dev ? '' : process.env.BASE_PATH
 		})
 	}
 };

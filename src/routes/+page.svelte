@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-</script>
-
 <div class="flex flex-col items-center pt-32">
 	<h1 class="h1">
 		<span class="gradient-heading text-6xl"> (Slogan) </span>
@@ -13,7 +9,7 @@
 
 <div class="flex flex-col items-center px-96 pt-32">
 	<div class="flex flex-col gap-16">
-		<a  href="https://junior-enterprises.ch/" class="card card-hover items-center p-6 align-middle">
+		<a href="https://junior-enterprises.ch/" class="card card-hover items-center p-6 align-middle">
 			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
@@ -33,7 +29,7 @@
 				libero qui praesentium, cupiditate earum debitis corrupti cumque recusandae veritatis modi
 				quos totam consectetur. Nulla alias aut dolorum.
 			</p>
-		</a>		
+		</a>
 		<a href="/team" class="card card-hover items-center p-8 align-middle">
 			<h3 class="h3 pb-2">Qui somme nous?</h3>
 			<p>

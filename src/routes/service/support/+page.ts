@@ -1,5 +1,5 @@
 export function load() {
-    return {
-        name: 'Support',
-    }
+	return {
+		name: 'Support'
+	};
 }

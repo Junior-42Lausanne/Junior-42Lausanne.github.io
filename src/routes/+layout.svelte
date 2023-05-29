@@ -14,7 +14,7 @@
 
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
-	import { AppBar, AppShell, Avatar, TableOfContents } from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
 </script>
 
 <AppShell>
@@ -31,7 +31,6 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<!-- 	<svelte:fragment slot="sidebar"> -->
 	<svelte:fragment slot="pageFooter">
 		<div class="flex flex-col items-center">
 			<div class="flex flex-row">

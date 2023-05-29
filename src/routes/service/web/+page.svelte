@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
-	export let data: any = { name: 'Web' };
-
 	const services = [
 		{
 			name: 'Wordpress',

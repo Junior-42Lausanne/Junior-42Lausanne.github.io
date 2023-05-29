@@ -1,6 +1,6 @@
 export function load() {
-    return {
-        name: 'Web',
-        // description: 'Découvrez nos prestations',
-    }
+	return {
+		name: 'Web'
+		// description: 'Découvrez nos prestations',
+	};
 }

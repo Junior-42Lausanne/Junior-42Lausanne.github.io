@@ -7,7 +7,7 @@
 	export let picture: string;
 	export let linkedin_link: string;
 	export let role: string;
-	export let mail: string;
+	// export let mail: string;
 
 	const linkedin_logo =
 		'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png';
