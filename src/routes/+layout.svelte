@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '@skeletonlabs/skeleton/themes/theme-crimson.css';
+	// import '@skeletonlabs/skeleton/themes/theme-crimson.css';
 	// import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 	// import '@skeletonlabs/skeleton/themes/theme-modern.css';
 	// import '@skeletonlabs/skeleton/themes/theme-rocket.css';
@@ -9,6 +9,9 @@
 	// import '@skeletonlabs/skeleton/themes/theme-hamlindigo.css';
 	// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 
+	// import '../themes/classy2.postcss';
+	import '../themes/c4.postcss';
+
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
 	import { AppBar, AppShell, Avatar, TableOfContents } from '@skeletonlabs/skeleton';
@@ -17,11 +20,9 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar>
-			<svelte:fragment slot="lead"
-				><a href="/"><Avatar width="w-12" rounded="rounded-full" initials="42" /></a
-				></svelte:fragment
-			>
-			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
+			<svelte:fragment slot="lead">
+				<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
+			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a type="button" class="btn variant-ghost" href="/service">Prestation</a>
 				<a type="button" class="btn variant-ghost" href="/team">Equipe</a>
@@ -30,16 +31,14 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-<!-- 	<svelte:fragment slot="sidebar"> -->
+	<!-- 	<svelte:fragment slot="sidebar"> -->
 	<svelte:fragment slot="pageFooter">
 		<div class="flex flex-col items-center">
 			<div class="flex flex-row">
 				<button class="btn variant-ghost"> <a href="/legal">Mentions légales</a> </button>
-			<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
+				<button class="btn variant-ghost"> <a href="/legal">Copyright</a> </button>
 			</div>
-			
 		</div>
-		
 	</svelte:fragment>
 
 	<slot />
