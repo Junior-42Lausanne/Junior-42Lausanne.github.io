@@ -8,7 +8,7 @@
 		<p class="text-1xl sm:text-3xl md:text-4xl lg:text-5xl">{$page.data.description}</p>
 	{/if}
 	<hr class="my-8 w-1/2" />
-	<div class="flex flex-col items-center justify-center lg:flex-row">
+	<div class="mx-6 flex flex-col items-center justify-center gap-6">
 		<slot />
 	</div>
 </div>

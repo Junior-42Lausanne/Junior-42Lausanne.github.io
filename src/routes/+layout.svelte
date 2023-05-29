@@ -7,6 +7,7 @@
 
 	import { AppBar, AppShell, drawerStore } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
+	import MyAppBar from './MyAppBar.svelte';
 
 	const links: { href: string; label: string }[] = [
 		{
@@ -32,30 +33,14 @@
 
 <AppShell>
 	<svelte:fragment slot="header">
-		<AppBar>
-			<svelte:fragment slot="lead">
-				<div class="flex items-center">
-					<button class="btn btn-sm mr-4 md:hidden" on:click={() => drawerStore.open()}>
-						<span>
-							<svg viewBox="0 0 100 80" class="h-4 w-4 fill-token">
-								<rect width="100" height="20" />
-								<rect y="30" width="100" height="20" />
-								<rect y="60" width="100" height="20" />
-							</svg>
-						</span>
-					</button>
-				</div>
-			</svelte:fragment>
-
-			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
-
-			<svelte:fragment slot="trail">
-				{#each links as { href, label }}
-					<a type="button" class="btn text-gray-400 hover:text-white md:block" {href}>{label}</a>
-				{/each}
-			</svelte:fragment>
-		</AppBar>
+		<MyAppBar {links} closing={false} />
 	</svelte:fragment>
+
+	<div class="flex w-screen justify-center">
+		<div class="lg:w-xscreen">
+			<slot />
+		</div>
+	</div>
 
 	<svelte:fragment slot="pageFooter">
 		<div class="mt-10 p-4 text-center text-gray-400">
@@ -72,6 +57,4 @@
 			</div>
 		</div> -->
 	</svelte:fragment>
-
-	<slot />
 </AppShell>

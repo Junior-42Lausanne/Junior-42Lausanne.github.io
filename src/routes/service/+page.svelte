@@ -11,14 +11,14 @@
 
 <Service
 	name={'API'}
-	description={'Notre service d\'implémentation d\'API offre une expertise technique pour intégrer et déployer des API de manière efficace. Notre équipe de développeurs s\'occupe de tous les aspects de l\'implémentation, en veillant à ce que les API soient correctement configurées, sécurisées pour des performances optimales.'}
+	description={"Notre service d'implémentation d'API offre une expertise technique pour intégrer et déployer des API de manière efficace. Notre équipe de développeurs s'occupe de tous les aspects de l'implémentation, en veillant à ce que les API soient correctement configurées, sécurisées pour des performances optimales."}
 	picture={'/service-pictures/api.png'}
 	href={'service/api'}
 />
 
 <Service
 	name={'Support'}
-	description={"Notre service de support technique et de mise à jour de site web vous offre une assistance fiable et des mises à jour pour assurer la performance et la sécurité continues de votre site. "}
+	description={'Notre service de support technique et de mise à jour de site web vous offre une assistance fiable et des mises à jour pour assurer la performance et la sécurité continues de votre site. '}
 	picture={'/service-pictures/support.png'}
 	href={'service/support'}
 />

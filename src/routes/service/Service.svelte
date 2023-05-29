@@ -9,7 +9,7 @@
 	export let href: string;
 </script>
 
-<a {href} class="card card-hover m-1 flex flex-row p-8 md:m-4">
+<a {href} class="card card-hover flex flex-row p-8">
 	<Avatar
 		width="w-32"
 		max-width="w-32"
@@ -20,6 +20,6 @@
 	/>
 	<div class="items-left flex flex-col pl-4">
 		<h3 class="h3 pb-2">{name}</h3>
-		<p class="text-sm text-gray-600">{description}</p>
+		<p class="text-sm text-gray-400">{description}</p>
 	</div>
 </a>
