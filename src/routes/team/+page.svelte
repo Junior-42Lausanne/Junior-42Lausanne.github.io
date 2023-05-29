@@ -69,7 +69,7 @@
 			name: 'Isabelle x',
 			picture: 'profile-pictures/isabelle-name.png',
 			role: 'tbd',
-			linkedin_link: 'https://www.linkedin.com/in/maximestocklin/',
+			linkedin_link: '/',
 			mail: ''
 		}
 	];
