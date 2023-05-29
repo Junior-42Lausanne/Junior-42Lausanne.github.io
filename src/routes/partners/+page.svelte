@@ -12,6 +12,11 @@
 			name: '',
 			logo: 'https://i0.wp.com/bthcrhqa.preview.infomaniak.website/wp-content/uploads/2018/05/JEF-1.png?w=1080',
 			href: 'https://jef.ch'
+		},
+		{
+			name: '',
+			logo: 'https://42lausanne.ch/wp-content/uploads/2021/01/42_logo.svg',
+			href: 'https://42lausanne.ch/'
 		}
 	];
 </script>

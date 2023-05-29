@@ -26,7 +26,7 @@
 		"
 	>
 		{#each services as service}
-			<AccordionItem open>
+			<AccordionItem>
 				<svelte:fragment slot="lead">
 					<img src={service.picture} alt={service.name} class="h-16 w-16" />
 				</svelte:fragment>
