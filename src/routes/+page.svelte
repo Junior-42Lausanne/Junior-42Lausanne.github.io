@@ -13,32 +13,35 @@
 <div class="flex flex-col items-center px-7 pt-32 md:px-40 lg:px-60 xl:px-96">
 	<div class="flex flex-col gap-16">
 		<a href="https://junior-enterprises.ch/" class="card card-hover items-center p-6 align-middle">
-			<h3 class="h3 pb-2">What is a Junior Enterprise?</h3>
+			<h3 class="h3 pb-2">Qu'est-ce qu'une Junior Entreprise?</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
-				libero qui praesentium, cupiditate earum debitis corrupti cumque recusandae veritatis modi
-				quos totam consectetur. Nulla alias aut dolorum.
-			</p>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus culpa fugiat inventore?
-				Perferendis omnis praesentium possimus aliquam similique, rem quod, magnam ex at, quia fuga
-				veritatis tenetur tempore beatae quas.
+				Une Junior Entreprise est une association étudiante à but non lucratif qui met en avant l'engagement,
+				l'excellence et l'innovation. Elle propose des services professionnels dans divers domaines en s'appuyant
+				sur les compétences et la motivation de ses membres, constituant ainsi une véritable plateforme d'échange
+				entre l'éducation et le monde du travail. En collaborant avec une Junior Entreprise, vous bénéficiez de
+				solutions personnalisées, de qualité et d'une expérience pratique enrichissante pour tous les acteurs impliqués.
 			</p>
 		</a>
 		<a href="https://42lausanne.ch/" class="card card-hover items-center p-8 align-middle">
-			<h3 class="h3 pb-2">What is 42?</h3>
+			<h3 class="h3 pb-2">Qu'est-ce que 42?</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
-				libero qui praesentium, cupiditate earum debitis corrupti cumque recusandae veritatis modi
-				quos totam consectetur. Nulla alias aut dolorum.
+				L'école 42 est une école d'informatique révolutionnaire, fondée sur le principe de l'apprentissage
+				par les pairs et axée sur le développement des compétences pratiques. Elle offre un environnement 
+				d'apprentissage collaboratif et sans enseignants, où les étudiants sont encouragés à apprendre par 
+				l'expérimentation et la résolution de problèmes. La pédagogie de l'école 42 repose sur l'autonomie, 
+				l'autodiscipline et la collaboration, permettant ainsi aux étudiants de développer leur créativité,
+				leur esprit d'initiative et leur capacité d'adaptation. L'école 42 est reconnue pour former des 
+				développeurs talentueux et hautement recherchés par l'industrie informatique.
 			</p>
 		</a>
 		<a href="/team" class="card card-hover items-center p-8 align-middle">
-			<h3 class="h3 pb-2">Qui somme nous?</h3>
+			<h3 class="h3 pb-2">Qui sommes nous?</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, placeat neque
-				libero qui praesentium, cupiditate earum debitis corrupti cumque recusandae veritatis modi
-				quos totam consectetur. Nulla alias aut dolorum.
+				La Junior 42 Lausanne est une organisation étudiante à but non lucratif axée sur le développement informatique.
+				En tant que passerelle entre l'univers académique et professionnel, notre Junior Entreprise vise à fournir des 
+				services de haute qualité à nos partenaires tout en offrant une expérience pratique et formatrice à nos membres. 
+				En tant que Junior Initiative, nous bénéficions du soutien de notre école et du réseau étendu des Juniors 
+				Entreprises suisses, ce qui renforce notre capacité à relever des défis ambitieux et à proposer des solutions novatrices.
 			</p>
 		</a>
 	</div>
