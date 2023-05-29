@@ -1,48 +1,31 @@
 <script lang="ts">
-	import { drawerStore } from '@skeletonlabs/skeleton';
+	import { Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 
-	const navItems = [
-		{
-			href: '/',
-			label: 'Home'
-		},
-		{
-			href: '/service',
-			label: 'Prestations'
-		},
-		{
-			href: '/team',
-			label: 'Equipe'
-		},
-		{
-			href: '/contact',
-			label: 'Contact'
-		},
-		{
-			href: '/partners',
-			label: 'Partenaires'
-		}
-	];
+	export let links: { href: string; label: string }[];
 
-	function drawerClose() {
-		drawerStore.close();
-	}
-	console.log('bruh');
-	console.log($page.url.href);
+	const drawerClose = () => drawerStore.close();
 
 	function href_matches_page(href: string) {
 		return $page.url.href.endsWith(href);
 	}
 </script>
 
-<nav class="list-nav">
-	<ul>
-		{#each navItems as { href, label }}
-			<li><a class:active={href_matches_page(href)} {href} on:click={drawerClose}>{label}</a></li>
-		{/each}
-	</ul>
-</nav>
+<Drawer>
+	<nav class="list-nav">
+		<ul>
+			<h2 class="p-2">
+				<a class:active={href_matches_page('/')} href="/" on:click={drawerClose}>JE 42 Lausanne</a>
+			</h2>
+			<hr />
+			{#each links as { href, label }}
+				<li class="p-2">
+					<a class:active={href_matches_page(href)} {href} on:click={drawerClose}>{label}</a>
+				</li>
+			{/each}
+		</ul>
+	</nav>
+</Drawer>
 
 <style lang="postcss">
 	.active {
