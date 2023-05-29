@@ -19,25 +19,10 @@
 			content:
 				"La Junior 42 Lausanne est une organisation étudiante à but non lucratif axée sur le développement informatique. En tant que passerelle entre l'univers académique et professionnel, notre Junior Entreprise vise à fournir des services de haute qualité à nos partenaires tout en offrant une expérience pratique et formatrice à nos membres. En tant que Junior Initiative, nous bénéficions du soutien de notre école et du réseau étendu des Juniors Entreprises suisses, ce qui renforce notre capacité à relever des défis ambitieux et à proposer des solutions novatrices."
 		}
-		// {
-		// 	title: "Qu'est-ce que la Confédération Suisse des Junior-Entreprises?",
-		// 	content:
-		// 		"La Confédération Suisse des Junior-Entreprises (CSJE) est l'association faîtière des Junior-Entreprises suisses. Elle a pour but de promouvoir le mouvement des Junior-Entreprises en Suisse et de représenter les intérêts de ses membres. Elle est également responsable de l'attribution du label de qualité Swiss Junior-Enterprise."
-		// },
-		// {
-		// 	title: "Qu'est-ce que le label Swiss Junior-Enterprise?",
-		// 	content:
-		// 		"Le label Swiss Junior-Enterprise est un label de qualité attribué par la Confédération Suisse des Junior-Entreprises. Il est décerné aux Junior-Entreprises qui répondent à des critères de qualité élevés et qui s'engagent à les respecter. Le label Swiss Junior-Enterprise est un gage de qualité pour les clients et les membres des Junior-Entreprises."
-		// }
 	];
 </script>
 
 <div class="my-20 flex flex-col items-center">
-	<h1 class="h1">
-		<span class="gradient-heading text-2xl md:text-3xl lg:text-6xl">
-			Slogan lorem ipsum dolor
-		</span>
-	</h1>
 	<h1 class="h1">
 		<span class="gradient-heading text-5xl md:text-7xl lg:text-9xl"> JE 42 Lausanne </span>
 	</h1>

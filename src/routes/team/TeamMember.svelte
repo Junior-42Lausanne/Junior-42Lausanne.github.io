@@ -13,8 +13,9 @@
 		'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png';
 </script>
 
-<div class="sm:mr-1card card card-hover ml-3 mr-3 flex flex-row flex-nowrap p-8 sm:ml-1">
-	<Avatar width="w-32" rounded="rounded-full" initials={name} src={picture} />
+<div class="card card-hover flex flex-row flex-nowrap p-8">
+	<img class="w-32 rounded-full" alt={name} src={picture} />
+	<!-- <Avatar width="w-32" rounded="rounded-full" initials={name} src={picture} /> -->
 	<div class="mx-4 flex flex-1 flex-col">
 		<h2 class="h2 pb-2">{name}</h2>
 		<p>{role}</p>

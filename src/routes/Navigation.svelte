@@ -28,6 +28,6 @@
 
 <style lang="postcss">
 	.active {
-		@apply bg-primary-500;
+		@apply bg-primary-500 text-gray-900;
 	}
 </style>

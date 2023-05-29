@@ -1,5 +1,5 @@
 <script lang="ts">
-	import WebService from './WebService.svelte';
+	import Service from '../Service.svelte';
 
 	const services = [
 		{
@@ -22,5 +22,10 @@
 </script>
 
 {#each services as service}
-	<WebService name={service.name} description={service.description} picture={service.picture} />
+	<Service
+		name={service.name}
+		description={service.description}
+		picture={service.picture}
+		href={''}
+	/>
 {/each}
