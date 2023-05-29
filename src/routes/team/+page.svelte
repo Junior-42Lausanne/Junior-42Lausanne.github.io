@@ -18,49 +18,56 @@
 		},
 		{
 			name: 'Lowell Zima',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/lowell-zima.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/lowell-zima/',
 			mail: ''
 		},
 		{
 			name: 'Jérémy Olivier',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/jeremy-olivier.png',
 			role: 'treasurer',
 			linkedin_link: 'https://www.linkedin.com/in/jol/',
 			mail: ''
 		},
 		{
-			picture: 'profile-pictures/quentin-jungo.png',
 			name: 'Joshua Morcom-Harneis',
+			picture: 'profile-pictures/joshua-morcom-harneis.png',
 			role: 'president',
 			linkedin_link: 'https://www.linkedin.com/in/joshua-morcom-harneis-1907921bb/',
 			mail: ''
 		},
 		{
 			name: 'Jacek Wikeria',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/jacek-wikeria.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jacek-f-wikiera-809983246/',
 			mail: ''
 		},
 		{
 			name: 'Jonathan terrettaz',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/jonathan-terrettaz.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jonathan-terrettaz-44256976/',
 			mail: ''
 		},
 		{
 			name: 'Alexis Gonnel',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/alexis-gonnel.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/alexis-gonelle-a22aa2260/',
 			mail: ''
 		},
 		{
 			name: 'Max Stock',
-			picture: 'profile-pictures/quentin-jungo.png',
+			picture: 'profile-pictures/max-stock.png',
+			role: 'tbd',
+			linkedin_link: 'https://www.linkedin.com/in/maximestocklin/',
+			mail: ''
+		},
+		{
+			name: 'Isabelle x',
+			picture: 'profile-pictures/isabelle-name.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/maximestocklin/',
 			mail: ''
