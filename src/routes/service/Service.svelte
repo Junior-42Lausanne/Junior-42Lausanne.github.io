@@ -2,7 +2,7 @@
 	export let name: string;
 	export let picture: string;
 	export let description: string;
-	export let href: string = '';
+	export let href = '';
 </script>
 
 <a {href} class="card card-hover flex flex-row items-center p-8">
