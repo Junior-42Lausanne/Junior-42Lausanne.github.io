@@ -23,7 +23,7 @@ jobs:
           npm run lint
 
   build_site:
-    needs: lint
+    needs: init
     runs-on: ubuntu-latest
     steps:
       - name: build
