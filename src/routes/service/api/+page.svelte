@@ -1,16 +1,16 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
-	import Service from '../Service.svelte';
+	import Services from '../Services.svelte';
 
 	const services = [
 		{
-			name: "Utilisation d'API",
+			name: "Integration d'API",
 			description: 'Nous creeons le lien entre vous et un service externe selon vos besoins',
 			picture: '/service-pictures/api.png'
 		},
 		{
 			name: "Création d'API",
-			description: 'Nous creeons le lien entre vos données et un service externe',
+			description: 'Nous creeons un API pour permettre de communiquer avec votre service',
 			picture: '/service-pictures/api.png'
 		}
 	];
@@ -18,13 +18,4 @@
 
 <Header name={'API'} description={'Découvrez nos services API'} />
 
-<div class="mx-6 grid gap-4">
-	{#each services as service}
-		<Service
-			name={service.name}
-			description={service.description}
-			picture={service.picture}
-			href={''}
-		/>
-	{/each}
-</div>
+<Services {services} />

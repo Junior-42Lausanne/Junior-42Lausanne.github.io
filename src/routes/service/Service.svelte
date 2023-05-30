@@ -1,10 +1,8 @@
-<!-- a little card to display a team member -->
-
 <script lang="ts">
 	export let name: string;
 	export let picture: string;
 	export let description: string;
-	export let href: string;
+	export let href: string = '';
 </script>
 
 <a {href} class="card card-hover flex flex-row items-center p-8">
@@ -13,4 +11,5 @@
 		<h3 class="h3 pb-2">{name}</h3>
 		<p class="text-sm text-gray-400">{description}</p>
 	</div>
+	<slot />
 </a>
