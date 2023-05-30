@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export let scrollY = writable(0);
+export const scrollY = writable(0);

@@ -73,7 +73,9 @@
 			linkedin_link: '/',
 			mail: ''
 		}
-	].sort(() => 0.5 - Math.random()).sort(() => 0.5 - Math.random());
+	]
+		.sort(() => 0.5 - Math.random())
+		.sort(() => 0.5 - Math.random());
 	// TODO better shuffle
 </script>
 

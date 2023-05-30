@@ -5,7 +5,6 @@
 	import '../app.postcss';
 	/// ==================================================
 
-
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import MyAppBar from '$lib/components/MyAppBar.svelte';
@@ -29,7 +28,7 @@
 			label: 'Partenaires'
 		}
 	];
-
+	// eslint-disable-next-line  @typescript-eslint/no-explicit-any
 	function scrollHandler(event: any) {
 		scrollY.set(event.currentTarget.scrollTop);
 	}
