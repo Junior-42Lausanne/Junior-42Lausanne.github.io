@@ -29,7 +29,7 @@
 	</div>
 	<div class="flex flex-col justify-end gap-2">
 		<a rel="noopener noreferrer " target="”_blank”" href={linkedin_link}>
-			<Avatar width="w-8" rounded="rounded-xl" initials="in" src={linkedin_logo} />
+			<Avatar width="w-8" rounded="rounded-full" initials="in" src={linkedin_logo} />
 		</a>
 		<!-- <a href={'mailto:' + mail}><Avatar width="w-8" rounded="rounded-xl" initials="@" /> </a> -->
 	</div>
