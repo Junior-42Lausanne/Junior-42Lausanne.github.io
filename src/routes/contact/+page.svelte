@@ -2,7 +2,6 @@
 	import Header from '$lib/components/Header.svelte';
 	import MailToLink from '$lib/components/MailToLink.svelte';
 	import { mail } from '$lib/mail';
-
 </script>
 
 <Header name="Contact" description="N'hésitez pas à nous contacter" />

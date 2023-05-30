@@ -4,10 +4,7 @@
 	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
 	const toggleDrawer = () => (closing ? drawerStore.close() : drawerStore.open());
 	let border = 'border';
-
 </script>
-
-
 
 <AppBar background="backdrop-blur-sm" border={`${border} border-gray-700`}>
 	<div class="flex w-screen justify-center">
