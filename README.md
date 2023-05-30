@@ -15,3 +15,11 @@ _Only front_
   - https://threejs.org/examples/webgl_geometry_text.html
   - https://threejs.org/examples/webgl_geometry_terrain.html
   - https://threejs.org/examples/webgl_geometry_spline_editor.html
+- [ ] Orthographe
+  - Tout en français
+  - E accent aigu
+  - ...
+- [ ] Content
+  - Trop de text sur la landing page ?
+- [ ] Add a better font
+- [ ] Find better logo for the services
