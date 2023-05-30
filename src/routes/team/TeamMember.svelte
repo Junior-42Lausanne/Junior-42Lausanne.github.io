@@ -9,6 +9,8 @@
 	export let role: string;
 	// export let mail: string;
 
+	let isHovering = false;
+
 	const linkedin_logo =
 		'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png';
 </script>
@@ -16,8 +18,13 @@
 <div class="card card-hover flex flex-row flex-nowrap p-8">
 	<img class="w-32 rounded-full" alt={name} src={picture} />
 	<!-- <Avatar width="w-32" rounded="rounded-full" initials={name} src={picture} /> -->
-	<div class="mx-4 flex flex-1 flex-col">
-		<h2 class="h2 pb-2">{name}</h2>
+	<div
+		on:mouseenter={() => (isHovering = true)}
+		on:mouseleave={() => (isHovering = false)}
+		class:truncate={!isHovering}
+		class="mx-4 flex flex-1 flex-col truncate hover:text-clip"
+	>
+		<h2 class=" h2 truncate whitespace-nowrap pb-2">{name}</h2>
 		<p>{role}</p>
 	</div>
 	<div class="flex flex-col justify-end gap-2">

@@ -78,10 +78,8 @@
 
 <Header name={'Notre equipe'} description={'Decouvrez les membres de notre equipe'} />
 
-<div class="flex flex-col items-center justify-center">
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-		{#each members as member}
-			<TeamMember {...member} />
-		{/each}
-	</div>
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+	{#each members as member}
+		<TeamMember {...member} />
+	{/each}
 </div>
