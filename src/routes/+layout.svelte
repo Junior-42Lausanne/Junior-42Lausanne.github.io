@@ -5,7 +5,7 @@
 	import '../app.postcss';
 	/// ==================================================
 
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
 	import MyAppBar from './MyAppBar.svelte';
 
@@ -31,8 +31,8 @@
 
 <Navigation {links} />
 
-<AppShell>
-	<svelte:fragment slot="header">
+<AppShell slotPageHeader="sticky top-0 z-10">
+	<svelte:fragment slot="pageHeader">
 		<MyAppBar {links} closing={false} />
 	</svelte:fragment>
 
@@ -46,7 +46,10 @@
 		<div class="mt-10 p-4 text-center text-gray-400">
 			<p>© 2023 JE 42 Lausanne</p>
 		</div>
-		<!-- 
+	</svelte:fragment>
+</AppShell>
+
+<!-- 
 			TODO : Add legal and copy right when needed
 			<div class="flex flex-col items-center">
 			<div class="flex flex-row">
@@ -56,5 +59,3 @@
 				<button class="btn variant-filled m-1 sm:m-5"> <a href="/legal">Copyright</a> </button>
 			</div>
 		</div> -->
-	</svelte:fragment>
-</AppShell>

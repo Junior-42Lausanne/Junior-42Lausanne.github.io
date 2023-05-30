@@ -6,7 +6,7 @@
 	const toggleDrawer = () => (closing ? drawerStore.close() : drawerStore.open());
 </script>
 
-<AppBar>
+<AppBar background="backdrop-blur-sm">
 	<div class="flex w-screen justify-center">
 		<div class="flex w-xscreen items-center">
 			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
