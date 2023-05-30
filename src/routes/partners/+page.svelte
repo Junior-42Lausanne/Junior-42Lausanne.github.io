@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
 	import Partner from './Partner.svelte';
 
 	type PartnerT = {
@@ -21,12 +22,12 @@
 	];
 </script>
 
-<div class="flex flex-col items-center justify-center">
-	<h1 class="gradient-heading h1 p-16 text-6xl md:text-8xl">Partners</h1>
+<Header name="Partenaires" description="Decouvrez nos qui nous font confiance" />
 
-	<div class={`grid gap-4 sm:grid-cols-1 md:grid-cols-2`}>
-		{#each partners as partner}
-			<Partner {...partner} />
-		{/each}
-	</div>
+<!-- <div class="flex flex-col items-center justify-center"> -->
+<div class={`grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2`}>
+	{#each partners as partner}
+		<Partner {...partner} />
+	{/each}
 </div>
+<!-- </div> -->

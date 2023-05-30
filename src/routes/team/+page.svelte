@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
 	import TeamMember from './TeamMember.svelte';
 	type Member = {
 		name: string;
@@ -75,9 +76,9 @@
 	];
 </script>
 
-<div class="flex flex-col items-center justify-center">
-	<h1 class="gradient-heading h1 p-16 text-5xl sm:text-7xl md:text-8xl">Notre equipe</h1>
+<Header name={'Notre equipe'} description={'Decouvrez les membres de notre equipe'} />
 
+<div class="flex flex-col items-center justify-center">
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 		{#each members as member}
 			<TeamMember {...member} />

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
 	import Service from '../Service.svelte';
 
 	const services = [
@@ -21,11 +22,15 @@
 	];
 </script>
 
-{#each services as service}
-	<Service
-		name={service.name}
-		description={service.description}
-		picture={service.picture}
-		href={''}
-	/>
-{/each}
+<Header name={'Web'} description={'Découvrez nos prestations web'} />
+
+<div class="mx-6 grid gap-4">
+	{#each services as service}
+		<Service
+			name={service.name}
+			description={service.description}
+			picture={service.picture}
+			href={''}
+		/>
+	{/each}
+</div>
