@@ -6,8 +6,9 @@
 	/// ==================================================
 
 	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
-	import Navigation from './Navigation.svelte';
-	import MyAppBar from './MyAppBar.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
+	import MyAppBar from '$lib/components/MyAppBar.svelte';
+	// import { scrollY, scrollX } from '$lib/stores';
 
 	const links: { href: string; label: string }[] = [
 		{
@@ -16,7 +17,7 @@
 		},
 		{
 			href: '/team',
-			label: 'Equipe'
+			label: 'Equipe',
 		},
 		{
 			href: '/contact',

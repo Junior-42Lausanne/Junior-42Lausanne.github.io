@@ -2,11 +2,14 @@
 	export let links: { href: string; label: string }[];
 	export let closing: boolean;
 	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
-
 	const toggleDrawer = () => (closing ? drawerStore.close() : drawerStore.open());
+	let border = 'border';
+
 </script>
 
-<AppBar background="backdrop-blur-sm">
+
+
+<AppBar background="backdrop-blur-sm" border={`${border} border-gray-700`}>
 	<div class="flex w-screen justify-center">
 		<div class="flex w-xscreen items-center">
 			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
