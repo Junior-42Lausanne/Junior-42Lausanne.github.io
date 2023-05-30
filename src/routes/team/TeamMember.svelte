@@ -28,7 +28,7 @@
 		<p>{role}</p>
 	</div>
 	<div class="flex flex-col justify-end gap-2">
-		<a target=”_blank” href={linkedin_link}>
+		<a rel="noopener noreferrer " target="”_blank”" href={linkedin_link}>
 			<Avatar width="w-8" rounded="rounded-xl" initials="in" src={linkedin_logo} />
 		</a>
 		<!-- <a href={'mailto:' + mail}><Avatar width="w-8" rounded="rounded-xl" initials="@" /> </a> -->

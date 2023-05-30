@@ -9,6 +9,6 @@
 	const href = maitTo(mail, subject, body);
 </script>
 
-<a {href} target=”_blank” class={customClass ? customClass : 'btn'}>
+<a {href} rel="noopener noreferrer " target="”_blank”" class={customClass ? customClass : 'btn'}>
 	<slot />
 </a>
