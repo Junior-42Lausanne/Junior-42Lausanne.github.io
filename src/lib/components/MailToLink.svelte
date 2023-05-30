@@ -2,8 +2,8 @@
 	import { maitTo } from '$lib/mail';
 
 	export let mail: string;
-	export let subject: string = '';
-	export let body: string = '';
+	export let subject = '';
+	export let body = '';
 	export let customClass: string | undefined = undefined;
 
 	const href = maitTo(mail, subject, body);
