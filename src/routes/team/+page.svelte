@@ -70,7 +70,7 @@
 			name: 'Isabelle Tovar',
 			picture: 'profile-pictures/isabelle-tovar.png',
 			role: 'tbd',
-			linkedin_link: '/',
+			linkedin_link: 'https://www.linkedin.com/in/isabel-tovar-nuez-566a6017/',
 			mail: ''
 		}
 	]
