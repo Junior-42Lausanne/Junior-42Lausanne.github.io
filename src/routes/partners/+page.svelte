@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Bg3D from '$lib/components/BG3D.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Partner from './Partner.svelte';
 
@@ -32,5 +31,3 @@
 	{/each}
 </div>
 <!-- </div> -->
-
-<Bg3D />

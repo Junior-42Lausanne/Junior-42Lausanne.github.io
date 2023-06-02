@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Points from '$lib/components/Points.svelte';
+
 	const cards: { title: string; content: string; href: string }[] = [
 		{
 			title: "Qu'est-ce qu'une Junior Entreprise?",
@@ -45,3 +47,5 @@
 		{/each}
 	</div>
 </div>
+
+<Points />

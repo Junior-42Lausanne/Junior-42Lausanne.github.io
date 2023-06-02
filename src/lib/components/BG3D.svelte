@@ -4,7 +4,7 @@
 
 	let el;
 	const scene = new THREE.Scene();
-	const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+	const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
 	const geometry = new THREE.BoxGeometry();
 	const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 	const cube = new THREE.Mesh(geometry, material);
@@ -38,5 +38,8 @@
 	});
 </script>
 
-<canvas bind:this={el} class="w-full h-full" style="position: absolute; top: 0; left: 0; z-index: -1;"
- />
+<canvas
+	bind:this={el}
+	class="h-full w-full"
+	style="position: absolute; top: 0; left: 0; z-index: -1;"
+/>
