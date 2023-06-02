@@ -39,7 +39,7 @@
 			mail: ''
 		},
 		{
-			name: 'Jacek Wikeria',
+			name: 'Jacek Wikiera',
 			picture: 'profile-pictures/jacek-wikeria.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jacek-f-wikiera-809983246/',
@@ -79,7 +79,7 @@
 	// TODO better shuffle
 </script>
 
-<Header name={'Notre equipe'} description={'Decouvrez les membres de notre equipe'} />
+<Header name={'Notre équipe'} description={'Découvrez les membres de notre équipe'} />
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
 	{#each members as member}
