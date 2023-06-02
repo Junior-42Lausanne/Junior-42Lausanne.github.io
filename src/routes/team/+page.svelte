@@ -39,7 +39,7 @@
 			mail: ''
 		},
 		{
-			name: 'Jacek Wikeria',
+			name: 'Jacek Wikiera',
 			picture: 'profile-pictures/jacek-wikeria.png',
 			role: 'tbd',
 			linkedin_link: 'https://www.linkedin.com/in/jacek-f-wikiera-809983246/',
@@ -67,16 +67,19 @@
 			mail: ''
 		},
 		{
-			name: 'Isabelle x',
-			picture: 'profile-pictures/isabelle-name.png',
+			name: 'Isabelle Tovar',
+			picture: 'profile-pictures/isabelle-tovar.png',
 			role: 'tbd',
-			linkedin_link: '/',
+			linkedin_link: 'https://www.linkedin.com/in/isabel-tovar-nuez-566a6017/',
 			mail: ''
 		}
-	];
+	]
+		.sort(() => 0.5 - Math.random())
+		.sort(() => 0.5 - Math.random());
+	// TODO better shuffle
 </script>
 
-<Header name={'Notre equipe'} description={'Decouvrez les membres de notre equipe'} />
+<Header name={'Notre équipe'} description={'Découvrez les membres de notre équipe'} />
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
 	{#each members as member}

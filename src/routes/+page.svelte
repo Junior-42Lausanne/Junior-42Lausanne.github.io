@@ -31,7 +31,12 @@
 <div class="flex flex-col items-center">
 	<div class="flex flex-col gap-16">
 		{#each cards as { title, content, href }}
-			<a {href} class="card card-hover mx-8 items-center p-6 align-middle">
+			<a
+				rel="noopener noreferrer "
+				target="”_blank”"
+				{href}
+				class="card card-hover mx-8 items-center p-6 align-middle"
+			>
 				<h3 class="h3 pb-2">{title}</h3>
 				<p class="pb-4 text-justify">
 					{content}

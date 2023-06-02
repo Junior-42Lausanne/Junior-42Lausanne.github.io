@@ -6,8 +6,9 @@
 	/// ==================================================
 
 	import { AppShell } from '@skeletonlabs/skeleton';
-	import Navigation from './Navigation.svelte';
-	import MyAppBar from './MyAppBar.svelte';
+	import Navigation from '$lib/components/Navigation.svelte';
+	import MyAppBar from '$lib/components/MyAppBar.svelte';
+	import { scrollY } from '$lib/stores';
 
 	const links: { href: string; label: string }[] = [
 		{
@@ -27,11 +28,15 @@
 			label: 'Partenaires'
 		}
 	];
+	// eslint-disable-next-line  @typescript-eslint/no-explicit-any
+	function scrollHandler(event: any) {
+		scrollY.set(event.currentTarget.scrollTop);
+	}
 </script>
 
 <Navigation {links} />
 
-<AppShell slotPageHeader="sticky top-0 z-10">
+<AppShell slotPageHeader="sticky top-0 z-10" on:scroll={scrollHandler}>
 	<svelte:fragment slot="pageHeader">
 		<MyAppBar {links} closing={false} />
 	</svelte:fragment>

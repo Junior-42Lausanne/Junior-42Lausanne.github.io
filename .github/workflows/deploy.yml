@@ -5,7 +5,7 @@ on:
     branches: 'master'
 
 jobs:
-  init:
+  build_site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,19 +18,9 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
-
-  lint:
-    needs: init
-    runs-on: ubuntu-latest
-    steps:
       - name: lint
         run: |
           npm run lint
-
-  build_site:
-    needs: lint
-    runs-on: ubuntu-latest
-    steps:
       - name: build
         env:
           BASE_PATH: '/website'
