@@ -11,13 +11,13 @@
 <AppBar background="backdrop-blur-sm" border={`${border} border-gray-900`}>
 	<div class="flex w-screen justify-center">
 		<div class="flex w-xscreen items-center">
-			<a href="/" class="gradient-heading text-xl"> JE 42 Lausanne </a>
+			<a href="/" class="h1 gradient-heading text-xl"> JE 42 Lausanne </a>
 
 			<div class="flex-1" />
 
 			<div class="md-max:hidden">
 				{#each links as { href, label }}
-					<a type="button" class="btn text-gray-400 hover:text-white" {href}>
+					<a type="button" class="h2 btn text-gray-400 hover:text-white" {href}>
 						{label}
 					</a>
 				{/each}
