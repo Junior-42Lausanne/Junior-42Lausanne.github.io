@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Bg3D from '$lib/components/BG3D.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import InteractivePoints from '$lib/components/InteractivePoints.svelte';
-	import Points from '$lib/components/Points.svelte';
 	import TeamMember from './TeamMember.svelte';
 	type Member = {
 		name: string;

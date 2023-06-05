@@ -11,7 +11,7 @@
 <AppBar background="backdrop-blur-sm" border={`${border} border-gray-900`}>
 	<div class="flex w-screen justify-center">
 		<div class="flex w-xscreen items-center">
-			<a href="/" class="h1 gradient-heading text-xl"> JE 42 Lausanne </a>
+			<a href="/" class="gradient-heading h1 text-xl"> JE 42 Lausanne </a>
 
 			<div class="flex-1" />
 
