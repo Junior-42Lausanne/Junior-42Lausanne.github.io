@@ -16,6 +16,7 @@
 		const container = document.getElementById('container');
 
 		scene = new THREE.Scene();
+		scene.background = new THREE.Color('black');
 
 		camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
 		camera.position.z = 250;
