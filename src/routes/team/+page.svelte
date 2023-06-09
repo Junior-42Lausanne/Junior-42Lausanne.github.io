@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Bg3D from '$lib/components/BG3D.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import TeamMember from './TeamMember.svelte';
 	type Member = {
@@ -87,5 +86,3 @@
 		<TeamMember {...member} />
 	{/each}
 </div>
-
-<Bg3D />
