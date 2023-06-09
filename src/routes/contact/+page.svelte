@@ -10,4 +10,5 @@
 <div class="m-24 flex flex-col items-center justify-center">
 	<MailToLink {mail} customClass="btn variant-filled-primary">Contactez nous !</MailToLink>
 </div>
+
 <Birds />

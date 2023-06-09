@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Birds from '$lib/components/Birds.svelte';
 	import Points from '$lib/components/Points.svelte';
 
 	const cards: { title: string; content: string; href: string }[] = [

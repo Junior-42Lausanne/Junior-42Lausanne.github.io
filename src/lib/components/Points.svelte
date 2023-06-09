@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-
 	import * as THREE from 'three';
 	import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
 
@@ -183,6 +182,9 @@
 
 	</script>
 
+	<!-- Import maps polyfill -->
+	<!-- Import maps polyfill -->
+	<!-- Import maps polyfill -->
 	<!-- Import maps polyfill -->
 	<!-- Import maps polyfill -->
 	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>

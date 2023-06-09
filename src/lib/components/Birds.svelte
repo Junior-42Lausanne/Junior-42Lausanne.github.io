@@ -1,8 +1,6 @@
 <script>
 	import * as THREE from 'three';
 
-	import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-
 	import { GPUComputationRenderer } from 'three/addons/misc/GPUComputationRenderer.js';
 	import { onMount } from 'svelte';
 
@@ -106,8 +104,9 @@
 		camera.position.z = 350;
 
 		scene = new THREE.Scene();
-		scene.background = new THREE.Color(0xffffff);
-		scene.fog = new THREE.Fog(0xffffff, 100, 1000);
+		scene.background = new THREE.Color(0x202736);
+
+		scene.fog = new THREE.Fog(0x202736, 100, 1000);
 
 		renderer = new THREE.WebGLRenderer();
 		renderer.setPixelRatio(window.devicePixelRatio);
@@ -122,8 +121,6 @@
 		//
 
 		window.addEventListener('resize', onWindowResize);
-
-		const gui = new GUI();
 
 		const effectController = {
 			separation: 20.0,
@@ -140,11 +137,6 @@
 		};
 
 		valuesChanger();
-
-		gui.add(effectController, 'separation', 0.0, 100.0, 1.0).onChange(valuesChanger);
-		gui.add(effectController, 'alignment', 0.0, 100, 0.001).onChange(valuesChanger);
-		gui.add(effectController, 'cohesion', 0.0, 100, 0.025).onChange(valuesChanger);
-		gui.close();
 
 		initBirds();
 	}
